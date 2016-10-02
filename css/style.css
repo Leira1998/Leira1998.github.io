@@ -1,5 +1,5 @@
 body {
-  background-image: url('/Users/Fer/GitHub/Personal_Website/images/Galaxy.png');
+  background-image: url('/Users/Fer/GitHub/Personal_Website/images/galaxy.png');
   background-position: center;;
   background-size: cover;
   background-attachment: fixed;
@@ -7,7 +7,7 @@ body {
 
 .header {
   width: 100%;
-  height: 170px;
+  height: 125px;
   background-color: snow;
 }
 
@@ -28,7 +28,7 @@ body {
   float: left;
   width: 64.5px;
   height: 62.5px;
-  background-image: url('/Users/Fer/GitHub/Personal_Website/images/logo.png');
+  background-image: url('/Users/Fer/GitHub/Personal_Website/images/icons/logo.png');
   background-position: center;
   background-size: cover;
 }
@@ -45,42 +45,6 @@ body {
   margin-left: 15px;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(181, 23, 0);
-}
-
-.nav-div {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(181, 23, 0);
-}
-
-.nav-list {
-  padding-left: 1px;
-  margin: 0px auto;
-  width: 645px;
-  height: 45px;
-}
-
-.nav-u  {
-  float: left;
-  margin-top: 2px;
-  padding: 10.25px 57.5px 10.75px 57.5px;
-  color: #fff;
-}
-
-.nav-u:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-
-.active {
-  border-radius: 5px;
-  background-color: #fff;
-  color: rgb(181, 23, 0);
-  text-decoration: underline;
-}
-
-.active:hover {
   color: rgb(181, 23, 0);
 }
 
@@ -114,12 +78,90 @@ body {
   background-color: #fff;
 }
 
-.col-md-4 {
+.submain .col-md-6 {
   text-align: center;
+}
+
+.submain h3 {
+  font-size: 35px;
+}
+
+.submain p {
+  font-size: 22px;
 }
 
 .footer {
   width: 100%;
   height: 150px;
-  background-color: #ccc;
+  background-color: #fff;
+  border-top: 2px solid #555;
+}
+
+#ref {
+  padding-top: 15px;
+}
+
+.ref {
+  width: 400px;
+  height: 120px;
+  padding-left: 12px;
+  padding-top: 10px;
+  margin: 0px auto;
+}
+
+.ref-img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-image: url('/Users/Fer/GitHub/Personal_Website/images/logo_full.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.ref-name {
+  padding-left: 15px;
+  float: left;
+  width: 275px;
+  height: 100px;
+}
+
+.ref-name h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #555;
+}
+
+.ref-name p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  color: #555;
+}
+
+.s-div {
+  margin: 50px auto;
+  width: 400px;
+  height: 50px;
+  padding-left: 0px;
+}
+
+.s-div ul {
+  list-style: none;
+}
+
+.s-div ul li {
+  float: left;
+}
+
+.s-icon {
+  margin-left: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+  transition: opacity .5s;
+}
+
+.s-icon:hover {
+  opacity: 0.6;
 }
