@@ -239,6 +239,9 @@ body {
     .main {
       text-align: center;
     }
+    .avatar {
+      margin-top: 25px;
+    }
     .langs {
       width: 500px;
       height: auto;
