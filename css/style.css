@@ -192,6 +192,7 @@ body {
 .ref-name h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;
+  font-weight: bold;
   color: #555;
 }
 
