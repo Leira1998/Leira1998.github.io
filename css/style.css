@@ -1,5 +1,5 @@
 body {
-  background-image: url('https://github.com/Leira1998/Leira1998.github.io/blob/master/images/Galaxy.png?raw=true');
+  background-image: url('https://github.com/Leira1998/Leira1998.github.io/blob/master/images/Mountain.png?raw=true');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -91,6 +91,7 @@ body {
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  color: #555;
 }
 
 #bio p {
