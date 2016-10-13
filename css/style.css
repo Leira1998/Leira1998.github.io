@@ -29,7 +29,7 @@ body {
   float: left;
   width: 64.5px;
   height: 62.5px;
-  background-image: url('https://github.com/Leira1998/Leira1998.github.io/blob/master/images/icons/logo.png?raw=true');
+  background-image: url('../images/icons/logo.png');
   background-position: center;
   background-size: cover;
 }
@@ -177,7 +177,7 @@ body {
   float: left;
   width: 100px;
   height: 100px;
-  background-image: url('https://github.com/Leira1998/Leira1998.github.io/blob/master/images/logo_full.png?raw=true');
+  background-image: url('../images/logo_full.png');
   background-position: center;
   background-size: cover;
   border-radius: 15px;
