@@ -111,15 +111,15 @@ header {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.projects {
-  padding: 45px 65px;
+.component {
+  padding: 45px 65px 70px;
   width: 100%;
   background-color: white;
   border-top: 2px solid #B51700;
   text-align: left;
 }
 
-.projects h2 {
+.component h2 {
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -137,6 +137,51 @@ header {
   margin-left: -50px;
   width: 100px;
   height: 100px;
+}
+
+#contact input {
+  margin-top: 15px;
+}
+
+#contact input[type="text"], #contact input[type="email"] {
+  width: 500px;
+  height: 55px;
+  padding-left: 5px;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+
+}
+
+#contact input[type="text"]:focus, #contact input[type="email"]:focus, #contact textarea:focus {
+  outline-style: none;
+}
+
+#contact textarea {
+  margin-top: 15px;
+  padding: 5px;
+  width: 500px;
+  height: 120px;
+  border-color: #bbb;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+#contact input[type="submit"] {
+  padding: 8px 20px;
+  background-color: #fff;
+  border: 2px solid #B51700;
+  border-radius: 5px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B51700;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #f8f8f8;
 }
 
 footer {
@@ -180,5 +225,10 @@ footer {
     }
     .p-lang {
       float: center;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], 
+    #contact input[type="submit"], #contact textarea {
+      width: 100%;
     }
 }
