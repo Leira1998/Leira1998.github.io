@@ -5,27 +5,29 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico"  />
   <title>Fernando Leira</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="libs/jquery-3.1.1.min.js"></script>
+  <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <link href="libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
-  <link href="fonts/fonts.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script src="js/main.js"></script>
 </head>
-<body hidden="hidden">
+<body>
 
-  <div class="header">
-    <div class="title">
-      <a href="/">
-        <div class="logo">
-          <div class="image"></div>
-          <div class="name">
-            <p>Fernando Leira</p>
-          </div>
-        </div>
-      </a>
+  <header>
+    <div class="nav-b">
+      <img src="img/icons/menu.png" />
     </div>
-  </div>
+    <a href="/">
+      <div class="logo">
+        <div class="image"></div>
+        <div class="name">
+          <p>Fernando Leira</p>
+        </div>
+      </div>
+    </a>
+  </header>
 
   <div class="main">
     <div class="container">
@@ -40,81 +42,54 @@
 
   <div class="submain">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6" id="bio">
-          <h3>About Me</h3>
-          <p>
-            Born in Madrid, Spain.
-          </p>
-          <p>
-            I started coding when I was 11 years old and know I program in more than 5 languages.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img class="avatar" src="images/avatar.png" />
-        </div>
-      </div>
+      <h3>About Me</h3>
+      <p>
+        Born in Madrid, Spain.
+      </p>
+      <p>
+        I started coding when I was 11 years old and now I program in more than 5 languages.
+      </p>
     </div>
   </div>
 
   <div class="projects">
     <div class="contaniner">
-      <h2>Projects</h2>
-      <div class="langs">
-        <div class="p-lang">
-          <img src="images/icons/html.png" />
-          <p>HTML, CSS &#38; JavaScript</p>
-        </div>
-        <div class="p-lang">
-          <img src="images/icons/python.png" />
-          <p>Python</p>
-        </div>
-        <div class="p-lang">
-          <img src="images/icons/ruby.png" />
-          <p>Ruby</p>
-        </div>
-        <div class="p-lang">
-          <img src="images/icons/cpp.png" />
-          <p>C++</p>
-        </div>
-        <div class="p-lang">
-          <img src="images/icons/php.png" />
-          <p>PHP &#38; MySQL</p>
-        </div>
-        <div class="p-lang">
-          <img src="images/icons/arduino.png" />
-          <p>Arduino &#38; Proccesing</p>
-        </div>
+      <h2>Projects I been working on</h2>
+      <div class="p-list">
+        <img class="wip" src="http://shield.net/files/pic/wip_icon.png" />
       </div>
     </div>
   </div>
 
-  <div class="footer">
+  <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6" id="ref">
-          <div class="ref">
-            <div class="ref-img"></div>
-            <div class="ref-name">
-              <h3>Fernando Leira</h3>
-              <p>Leira1998</p>
-            </div>
-          </div>
+      <a href="https://www.facebook.com/fernando.leiracortel">
+        <div class="s-div" id="facebook">
+          <img class="s-icon" src="img/icons/facebook.png" />
         </div>
-        <div class="col-md-6">
-          <div class="s-div">
-            <ul>
-              <li><a href="https://www.facebook.com/fernando.leiracortel"><img class="s-icon" id="facebook" src="images/icons/facebook.png" /></a></li>
-              <li><a href="https://twitter.com/LeiraFLC"><img class="s-icon" src="images/icons/twitter.png" /></a></li>
-              <li><a href="https://www.instagram.com/fer.leira/"><img class="s-icon" src="images/icons/instagram.png" /></a></li>
-              <li><a href="https://github.com/Leira1998"><img class="s-icon" src="images/icons/github.png" /></a></li>
-              <li><a href="https://www.codecademy.com/Leira1998"><img class="s-icon" src="images/icons/codeacademy.png" /></a></li>
-            </ul>
-          </div>
+      </a>
+      <a href="https://twitter.com/LeiraFLC">
+        <div class="s-div" id="twitter">
+          <img class="s-icon" src="img/icons/twitter.png" />
         </div>
-      </div>
+      </a>
+      <a href="https://www.instagram.com/fer.leira/">
+        <div class="s-div" id="instagram">
+          <img class="s-icon" src="img/icons/instagram.png" />
+        </div>
+      </a>
+      <a href="https://plus.google.com/u/0/106982311169292570858">
+        <div class="s-div" id="gplus">
+          <img class="s-icon" src="img/icons/gplus.png" />
+        </div>
+      </a>
+      <a href="https://github.com/Leira1998">
+        <div class="s-div" id="github">
+          <img class="s-icon" src="img/icons/github.png" />
+        </div>
+      </a>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
