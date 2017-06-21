@@ -1,3 +1,8 @@
+body, html {
+  margin: 0;
+  padding: 0;2
+}
+
 body {
   background-image: url('../img/Mountain.png');
   background-position: center;
@@ -36,35 +41,46 @@ header {
   height: 50px;
 }
 
-.logo {
-  margin: 0px auto;
-  width: 285px;
-  height: 100%;
-}
-
-.logo .image {
-  float: left;
-  width: 75px;
-  height: 100%;
-  background-image: url('../img/icons/logo.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.name {
-  float: left;
-  width: 210px;
-  height: 100%;
-  text-align: left;
-}
-
 .name p {
-  margin-left: 5px;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 70px;
   color: #fff;
+  text-align: center;
+}
+
+.name:hover {
+  text-decoration: none;
+}
+
+.h-nav {
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  margin-left: -175px;
+  list-style: none;
+}
+
+.h-nav li {
+  padding: 12px 20px 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.h-nav li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-link:hover {
+  text-decoration: none;
+}
+
+.page-link p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .main {
@@ -112,7 +128,7 @@ header {
 }
 
 .component {
-  padding: 45px 65px 70px;
+  padding: 80px 65px 100px;
   width: 100%;
   background-color: white;
   border-top: 2px solid #B51700;
@@ -127,8 +143,42 @@ header {
 }
 
 .p-list {
-  padding: 175px 50px;
+  padding: 60px 50px 30px;
   background-color: snow;
+}
+
+.p-obj {
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #B51700;
+  border: 2px solid #B51700;
+}
+
+.p-cover {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+}
+
+.p-info {
+  width: 100%;
+  height: 100px;
+  padding: 0px 20px;
+}
+
+.p-info h4 {
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+.p-info p {
+  position: relative;
+  top: 50%;
+  margin-top: -15px;
+  float: right;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
 }
 
 .wip {
@@ -227,7 +277,7 @@ footer {
       float: center;
     }
 
-    #contact input[type="text"], #contact input[type="email"], 
+    #contact input[type="text"], #contact input[type="email"],
     #contact input[type="submit"], #contact textarea {
       width: 100%;
     }

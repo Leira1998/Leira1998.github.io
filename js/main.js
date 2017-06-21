@@ -1,19 +1,40 @@
+function show_menu() {
+  $(".h-nav").fadeIn('fast');
+  $("header").animate({height: '+=60px',}, 500);
+  $(".nav-b").animate({height: '+=60px',}, 500);
+  $(".nav-b img").attr('src', 'img/icons/cross.png');
+}
+
+function hide_menu() {
+  $(".h-nav").fadeOut('fast');
+  $("header").animate({height: '-=60px',}, 500);
+  $(".nav-b").animate({height: '-=60px',}, 500);
+  $(".nav-b img").attr('src', 'img/icons/menu.png');
+}
+
 var dir = '+';
 
 $(document).ready(function() {
 
+  $(".h-nav").hide();
+
   $(".nav-b").on('click', function() {
-    //$("*").animate({'left': dir + '=200px'}, 500);
-    //$(".main").animate({'left': dir + '=200px'}, 500);
 
     if (dir === '+') {
-      $(".nav-b img").attr('src', 'img/icons/cross.png');
+      show_menu();
       dir = '-';
     }
     else {
-      $(".nav-b img").attr('src', 'img/icons/menu.png');
+      hide_menu();
       dir = '+';
     }
+
+  });
+
+  $(".page-link").on('click', function() {
+
+    hide_menu();
+    dir = '+';
 
   });
 

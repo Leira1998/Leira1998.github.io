@@ -9,6 +9,7 @@
   <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <link href="libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <script src="js/vendors/angular-1.5.8/angular.min.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script src="js/main.js"></script>
@@ -19,14 +20,14 @@
     <div class="nav-b">
       <img src="img/icons/menu.png" />
     </div>
-    <a href="/">
-      <div class="logo">
-        <div class="image"></div>
-        <div class="name">
-          <p>Fernando Leira</p>
-        </div>
-      </div>
+    <a href="#" class="name">
+      <p>Fernando Leira</p>
     </a>
+    <ul class="h-nav">
+      <li><a class="page-link" href="#about"><p>About</p></a></li>
+      <li><a class="page-link" href="#projects"><p>Projects</p></a></li>
+      <li><a class="page-link" href="#contact"><p>Contact</p></a></li>
+    </ul>
   </header>
 
   <div class="main">
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-  <div class="submain">
+  <div id="about" class="submain">
     <div class="container">
       <h3>About Me</h3>
       <p>
@@ -52,14 +53,28 @@
     </div>
   </div>
 
-  <div id="projects" class="component">
+  <!--<div id="projects" class="component">
     <div class="contaniner">
+
       <h2>Projects I been working on</h2>
-      <div class="p-list">
-        <img class="wip" src="http://shield.net/files/pic/wip_icon.png" />
+      <div ng-app="projects" ng-controller="ProjectsController" class="p-list">
+        <div class="row">
+          <div class="col-md-4" ng-repeat="project in projects">
+            <div class="p-obj">
+              <div class="p-cover">
+                <img src=""  />
+              </div>
+              <div class="p-info">
+                <h4>{{ project.title }}</h4>
+                <p>{{ project.lang }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
+  </div>-->
 
   <div id="contact" class="component">
     <div class="container">
@@ -103,6 +118,10 @@
       </a>
     </div>
   </footer>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/ProjectsController.js"></script>
 
 </body>
 </html>
