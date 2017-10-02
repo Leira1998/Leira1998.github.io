@@ -1,6 +1,8 @@
+a:hover {text-decoration: none !important;}
+
 body, html {
   margin: 0;
-  padding: 0;2
+  padding: 0;
 }
 
 body {
@@ -12,42 +14,24 @@ body {
 
 header {
   position: fixed;
+  padding: 30px;
   width: 100%;
-  height: 75px;
-  border-bottom: 5px solid #fff;
-  background-color: #B51700;
+  border-bottom: 0px solid #fff;
   z-index: 1;
+
+  transition: background-color .5s;
 }
 
-.nav-b {
-  float: left;
-  position: relative;
-
-  width: 75px;
-  height: 75px;
-
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.nav-b img {
-  position: relative;
-  top: 50%;
-  margin-top: -25px;
-  left: 50%;
-  margin-left: -25px;
-
-  width: 50px;
-  height: 50px;
+header a {
+  color: #fff;
 }
 
 .name p {
+  float: left;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  line-height: 70px;
-  color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .name:hover {
@@ -55,29 +39,22 @@ header {
 }
 
 .h-nav {
-  position: fixed;
-  top: 75px;
-  left: 50%;
-  margin-left: -175px;
-  list-style: none;
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
 }
 
 .h-nav li {
-  padding: 12px 20px 5px;
   float: left;
-  cursor: pointer;
 }
 
-.h-nav li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.page-link:hover {
-  text-decoration: none;
+.page-link {
+  display: block;
+  text-align: center;
+  padding: 8px 20px;
 }
 
 .page-link p {
-  color: #fff;
   font-weight: bold;
   font-size: 15px;
   font-family: 'Ubuntu', sans-serif;
@@ -86,45 +63,25 @@ header {
 .main {
   padding-top: 165px;
   width: 100%;
-  height: 560px;
+  height: 100vh;
 }
 
-.main .col-md-8 {
+.main .col-md-4 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 42px 20px;
 }
 
 .main h1 {
-  font-size: 60px;
+  font-size: 52px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #fff;
 }
 
 .main p {
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
-}
-
-.submain {
-  padding: 100px 0px 140px;
-  width: 100%;
-  background-color: #fff;
-  border-top: 2px solid #B51700;
-  text-align: center;
-}
-
-.submain h3 {
-  font-size: 35px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #555;
-}
-
-.submain p {
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .component {
@@ -199,7 +156,7 @@ header {
   padding-left: 5px;
 
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
@@ -235,33 +192,30 @@ header {
 }
 
 footer {
-  padding: 0px 5px;
+  padding: 50px 0px;
   width: 100%;
   background-color: #fff;
-  border-top: 2px solid #B51700;
+  border-top: 2px solid #ddd;
+  text-align: center;
 }
 
-.s-div {
-  float: left;
-  width: 20%;
-  height: 120px;
+footer span {
+  font-size: 1.8em;
+  font-family: 'Arial';
+  font-weight: bold;
+  color: #222;
 }
 
-.s-icon {
+.social {
   position: relative;
-  top: 50%;
-  margin-top: -25px;
-  left: 50%;
-  margin-left: -25px;
+  margin-top: 20px;
+  width: 35px;
+  height: 35px;
 
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-
-  transition: opacity .5s;
+  transition: opacity .1s;
 }
 
-.s-icon:hover {
+.social:hover {
   opacity: 0.8;
 }
 

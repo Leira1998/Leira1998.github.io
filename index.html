@@ -9,7 +9,6 @@
   <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <link href="libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
-  <script src="js/vendors/angular-1.5.8/angular.min.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script src="js/main.js"></script>
@@ -17,15 +16,13 @@
 <body>
 
   <header>
-    <div class="nav-b">
-      <img src="img/icons/menu.png" />
-    </div>
-    <a href="#" class="name">
+    <a href="/" class="name">
       <p>Fernando Leira</p>
     </a>
     <ul class="h-nav">
-      <li><a class="page-link" href="#about"><p>About</p></a></li>
-      <li><a class="page-link" href="#projects"><p>Projects</p></a></li>
+      <li><a class="page-link" href="#bio"><p>Bio</p></a></li>
+      <li><a class="page-link" href="#portfolio"><p>Portfolio</p></a></li>
+      <li><a class="page-link" href="#skills"><p>Skills</p></a></li>
       <li><a class="page-link" href="#contact"><p>Contact</p></a></li>
     </ul>
   </header>
@@ -33,48 +30,40 @@
   <div class="main">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <h1>Welcome to Fernando Leira&#39;s Website</h1>
-          <p>This is my personal website</p>
+        <div class="col-md-4">
+          <h1>Fernando Leira</h1>
+          <p>Undergraduate Student</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="about" class="submain">
+  <div id="bio" class="component">
     <div class="container">
-      <h3>About Me</h3>
-      <p>
-        Born in Madrid, Spain.
-      </p>
-      <p>
-        I started coding when I was 11 years old and now I program in more than 5 languages.
-      </p>
+
+      <h2>Bio</h2>
+
+
     </div>
   </div>
 
-  <!--<div id="projects" class="component">
+  <div id="skills" class="component">
     <div class="contaniner">
 
-      <h2>Projects I been working on</h2>
-      <div ng-app="projects" ng-controller="ProjectsController" class="p-list">
-        <div class="row">
-          <div class="col-md-4" ng-repeat="project in projects">
-            <div class="p-obj">
-              <div class="p-cover">
-                <img src=""  />
-              </div>
-              <div class="p-info">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.lang }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2>Skills</h2>
+
 
     </div>
-  </div>-->
+  </div>
+
+  <div id="portfolio" class="component">
+    <div class="contaniner">
+
+      <h2>Portfolio</h2>
+
+
+    </div>
+  </div>
 
   <div id="contact" class="component">
     <div class="container">
@@ -91,37 +80,25 @@
 
   <footer>
     <div class="container">
-      <a href="https://www.facebook.com/fernando.leiracortel">
-        <div class="s-div" id="facebook">
-          <img class="s-icon" src="img/icons/facebook.png" />
-        </div>
+      <span>Fernando Leira Cortel</span>
+      <br />
+      <a href="https://www.facebook.com/fernando.leiracortel" target="_blank">
+        <img class="social" src="img/icons/facebook.png" />
       </a>
-      <a href="https://twitter.com/LeiraFLC">
-        <div class="s-div" id="twitter">
-          <img class="s-icon" src="img/icons/twitter.png" />
-        </div>
+      <a href="https://twitter.com/LeiraFLC" target="_blank">
+        <img class="social" src="img/icons/twitter.png" />
       </a>
-      <a href="https://www.instagram.com/fer.leira/">
-        <div class="s-div" id="instagram">
-          <img class="s-icon" src="img/icons/instagram.png" />
-        </div>
+      <a href="https://www.instagram.com/fer.leira" target="_blank">
+        <img class="social" src="img/icons/instagram.png" />
       </a>
-      <a href="https://plus.google.com/u/0/106982311169292570858">
-        <div class="s-div" id="gplus">
-          <img class="s-icon" src="img/icons/gplus.png" />
-        </div>
+      <a href="https://www.linkedin.com/in/fernando-leira-cortel" target="_blank">
+        <img class="social" src="img/icons/linkedin.png" />
       </a>
-      <a href="https://github.com/Leira1998">
-        <div class="s-div" id="github">
-          <img class="s-icon" src="img/icons/github.png" />
-        </div>
+      <a href="https://github.com/Leira1998" target="_blank">
+        <img class="social" src="img/icons/github.png" />
       </a>
     </div>
   </footer>
-
-
-  <script src="js/app.js"></script>
-  <script src="js/ProjectsController.js"></script>
 
 </body>
 </html>
