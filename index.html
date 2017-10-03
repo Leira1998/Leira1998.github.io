@@ -5,7 +5,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico"  />
   <title>Fernando Leira</title>
 
-  <script src="libs/jquery-3.1.1.min.js"></script>
+  <script src="libs/jquery-3.2.1.min.js"></script>
   <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <link href="libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
@@ -20,10 +20,10 @@
       <p>Fernando Leira</p>
     </a>
     <ul class="h-nav">
-      <li><a class="page-link" href="#bio"><p>Bio</p></a></li>
-      <li><a class="page-link" href="#portfolio"><p>Portfolio</p></a></li>
-      <li><a class="page-link" href="#skills"><p>Skills</p></a></li>
-      <li><a class="page-link" href="#contact"><p>Contact</p></a></li>
+      <li><a class="page-link" id="bio-a" href="#bio"><p>Bio</p></a></li>
+      <li><a class="page-link" id="portfolio-a" href="#portfolio"><p>Portfolio</p></a></li>
+      <li><a class="page-link" id="skills-a" href="#skills"><p>Skills</p></a></li>
+      <li><a class="page-link" id="contact-a" href="#contact"><p>Contact</p></a></li>
     </ul>
   </header>
 
@@ -42,7 +42,14 @@
     <div class="container">
 
       <h2>Bio</h2>
+      <div class="row">
+        <div class="col-md-6">
 
+        </div>
+        <div class="col-md-6">
+          <img src="img/avatar.jpg" alt="avatar" class="img-circle" />
+        </div>
+      </div>
 
     </div>
   </div>
@@ -51,7 +58,14 @@
     <div class="contaniner">
 
       <h2>Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
 
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
 
     </div>
   </div>
@@ -68,35 +82,34 @@
   <div id="contact" class="component">
     <div class="container">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" id="iName" name="name" placeholder="Name" /><br />
-        <input type="email" id="iEmail" name="email" placeholder="Email" /><br />
-        <input type="text" id="iSubject" name="subject" placeholder="Subject" /><br />
-        <textarea id="iMessage" name="message" placeholder="Message"></textarea><br />
-        <input type="submit" value="Send" /><br />
-      </form>
+
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <span>Fernando Leira Cortel</span>
-      <br />
-      <a href="https://www.facebook.com/fernando.leiracortel" target="_blank">
-        <img class="social" src="img/icons/facebook.png" />
-      </a>
-      <a href="https://twitter.com/LeiraFLC" target="_blank">
-        <img class="social" src="img/icons/twitter.png" />
-      </a>
-      <a href="https://www.instagram.com/fer.leira" target="_blank">
-        <img class="social" src="img/icons/instagram.png" />
-      </a>
-      <a href="https://www.linkedin.com/in/fernando-leira-cortel" target="_blank">
-        <img class="social" src="img/icons/linkedin.png" />
-      </a>
-      <a href="https://github.com/Leira1998" target="_blank">
-        <img class="social" src="img/icons/github.png" />
-      </a>
+      <div class="row">
+        <div class="col-md-6">
+          <span>Fernando Leira Cortel</span>
+        </div>
+        <div id="social-div" class="col-md-6">
+          <a href="https://www.facebook.com/fernando.leiracortel" target="_blank">
+            <img class="social" src="img/icons/facebook.png" />
+          </a>
+          <a href="https://twitter.com/LeiraFLC" target="_blank">
+            <img class="social" src="img/icons/twitter.png" />
+          </a>
+          <a href="https://www.instagram.com/fer.leira" target="_blank">
+            <img class="social" src="img/icons/instagram.png" />
+          </a>
+          <a href="https://www.linkedin.com/in/fernando-leira-cortel" target="_blank">
+            <img class="social" src="img/icons/linkedin.png" />
+          </a>
+          <a href="https://github.com/Leira1998" target="_blank">
+            <img class="social" src="img/icons/github.png" />
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 

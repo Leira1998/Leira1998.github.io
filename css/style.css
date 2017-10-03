@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-  background-image: url('../img/Mountain.png');
+  background-image: url('../img/bg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -14,12 +14,13 @@ body {
 
 header {
   position: fixed;
-  padding: 30px;
+  padding: 35px 30px 20px;
   width: 100%;
-  border-bottom: 0px solid #fff;
+  /*border-bottom: 1px solid rgb(56, 156, 196);*/
   z-index: 1;
+  box-shadow: 2px 2px 2px #888;
 
-  transition: background-color .5s;
+  transition: padding .5s;
 }
 
 header a {
@@ -51,13 +52,22 @@ header a {
 .page-link {
   display: block;
   text-align: center;
-  padding: 8px 20px;
+  padding: 7px 15px;
+}
+
+.page-link:hover {
+  color: #555;
+  opacity: .8;
 }
 
 .page-link p {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.page-link-active {
+  text-decoration: underline;
 }
 
 .main {
@@ -88,7 +98,7 @@ header a {
   padding: 80px 65px 100px;
   width: 100%;
   background-color: white;
-  border-top: 2px solid #B51700;
+  border-top: 2px solid rgb(56, 156, 196);
   text-align: left;
 }
 
@@ -96,99 +106,18 @@ header a {
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: #555;
 }
 
-.p-list {
-  padding: 60px 50px 30px;
-  background-color: snow;
+#bio {
+  background-color: rgb(56, 156, 196);
+  color: #fff;
 }
 
-.p-obj {
-  margin-bottom: 30px;
-  height: 250px;
-  background-color: #B51700;
-  border: 2px solid #B51700;
-}
-
-.p-cover {
-  width: 100%;
-  height: 150px;
-  background-color: #fff;
-}
-
-.p-info {
-  width: 100%;
-  height: 100px;
-  padding: 0px 20px;
-}
-
-.p-info h4 {
-  float: left;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-}
-
-.p-info p {
-  position: relative;
-  top: 50%;
-  margin-top: -15px;
-  float: right;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-}
-
-.wip {
-  position: relative;
-  left: 50%;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
-}
-
-#contact input {
-  margin-top: 15px;
-}
-
-#contact input[type="text"], #contact input[type="email"] {
-  width: 500px;
-  height: 55px;
-  padding-left: 5px;
-
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
-
-}
-
-#contact input[type="text"]:focus, #contact input[type="email"]:focus, #contact textarea:focus {
-  outline-style: none;
-}
-
-#contact textarea {
-  margin-top: 15px;
-  padding: 5px;
-  width: 500px;
-  height: 120px;
-  border-color: #bbb;
-
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-}
-
-#contact input[type="submit"] {
-  padding: 8px 20px;
-  background-color: #fff;
-  border: 2px solid #B51700;
-  border-radius: 5px;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #B51700;
-}
-
-#contact input[type="submit"]:hover {
-  background-color: #f8f8f8;
+#bio img {
+  display: block;
+  margin: auto;
+  width: 280px;
+  height: 280px;
 }
 
 footer {
@@ -196,19 +125,21 @@ footer {
   width: 100%;
   background-color: #fff;
   border-top: 2px solid #ddd;
-  text-align: center;
+  text-align: left;
+}
+
+#social-div {
+  text-align: right;
 }
 
 footer span {
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-family: 'Arial';
-  font-weight: bold;
   color: #222;
 }
 
 .social {
   position: relative;
-  margin-top: 20px;
   width: 35px;
   height: 35px;
 
@@ -219,20 +150,16 @@ footer span {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 991px) {
-    .main {
-      text-align: center;
-    }
-    .langs {
-      width: 500px;
-      height: auto;
-    }
-    .p-lang {
-      float: center;
-    }
-
-    #contact input[type="text"], #contact input[type="email"],
-    #contact input[type="submit"], #contact textarea {
-      width: 100%;
-    }
+@media only screen and (max-width: 700px) {
+  .name p, .h-nav {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .page-link {
+    display: inline-block;
+  }
+  .main {
+    text-align: center;
+  }
 }
